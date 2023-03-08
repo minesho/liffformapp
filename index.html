@@ -64,7 +64,7 @@
 
         $(function () {
             $('form').submit(function () {
-                const hatunetu = $('input[name="hatunetu"]').val();
+                const hatunetu = $('select[name="hatunetu"]').val();
                 const msg = `${hatunetu}`+'を発注お願いします。';
                 sendText(msg);
                 return false;
